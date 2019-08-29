@@ -1,0 +1,32 @@
+<ion-content>
+    <ion-card class="card_login">
+        <ion-card-header>
+            <p class="center titulo">Login</p>
+        </ion-card-header>
+        <!-- Campos -->
+        <ion-card-content>
+            <ion-item class="background-transparente">
+                <ion-label position="floating">Email</ion-label>
+                <ion-input [(ngModel)]="login.email"></ion-input>
+            </ion-item>
+
+            <ion-item class="background-transparente">
+                <ion-label position="floating">Senha</ion-label>
+                <ion-input
+                    type="password"
+                    [(ngModel)]="login.password"
+                ></ion-input>
+            </ion-item>
+
+            <!-- Buttons -->
+            <ion-row class="center buttons">
+                <ion-col>
+                    <ion-button (click)="fazerLogin()">Login</ion-button>
+                </ion-col>
+                <ion-col>
+                    <ion-button (click)="limpar()">Limpar</ion-button>
+                </ion-col>
+            </ion-row>
+        </ion-card-content>
+    </ion-card>
+</ion-content>
